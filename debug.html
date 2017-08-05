@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo Bomb</title>
+</head>
+<body>
+<script>
+	var url = new URL(window.location);
+	var token = url.hash;
+	var params =  url.searchParams
+	alert("Fragments: " + token)
+	alert("Params: " + params)
+</script>
+</body>
+</html>
