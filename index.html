@@ -6,8 +6,8 @@
 <body>
 <script>
 	var url = new URL(window.location);
-	var token = url.searchParams.get("access_token");
-	window.location.replace("photobomb://oauth/v2/#access_token=" + token);
+	var token = url.hash;
+	window.location.replace("photobomb://oauth/v2/" + token);
 </script>
 </body>
 </html>
