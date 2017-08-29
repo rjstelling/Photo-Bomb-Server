@@ -7,7 +7,8 @@
 <script>
 	var url = new URL(window.location);
 	var token = url.hash;
-	window.location.replace("photobomb://oauth/v2/" + token);
+	var params =  url.searchParams
+	window.location.replace("photobomb://oauth/v2/?" + params + token);
 </script>
 </body>
 </html>
